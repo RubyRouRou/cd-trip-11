@@ -101,6 +101,21 @@
   .pick p{margin:0;font-size:12.8px;color:var(--muted)}
   .pick .links{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
 
+
+  .pack{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;margin:14px 0 0 20px}
+  .pack h4{margin:0 0 8px;font-size:14px;color:var(--ink)}
+  .ck{display:flex;align-items:flex-start;gap:10px;padding:7px 2px;
+    border-bottom:1px dashed #f2ece4;font-size:13.5px;color:#3a3532;cursor:pointer}
+  .ck:last-of-type{border-bottom:0}
+  .ck input{appearance:none;-webkit-appearance:none;width:19px;height:19px;flex:0 0 19px;
+    border:1.6px solid #cbbfb2;border-radius:5px;margin:1px 0 0;position:relative;cursor:pointer;background:#fff}
+  .ck input:checked{background:var(--green);border-color:var(--green)}
+  .ck input:checked::after{content:"✓";position:absolute;inset:0;color:#fff;font-size:12px;
+    line-height:16px;text-align:center;font-weight:800}
+  .ck input:checked + span{color:#a89f96;text-decoration:line-through}
+  .pack .cnt{font-size:12px;color:var(--muted);margin-top:8px}
+
   footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
     font-size:12.5px;color:var(--muted)}
   footer p{margin:4px 0}
@@ -126,7 +141,7 @@
   <div class="hero-inner">
     <div class="kicker">CHENGDU · 5 DAYS</div>
     <h1>成都 5 天 4 晚<br>吃貨慢活行程</h1>
-    <div class="sub">2 人同行（含長輩）｜每天 2–3 個點、午後留白、打車為主。每站附高德導航，每家店附高德搜尋。</div>
+    <div class="sub">柔姐＋Jill 姐，2 人同行｜每天 2–3 個點、午後留白、打車為主。每站附高德導航，每家店附高德搜尋。</div>
     <div class="facts">
       <div class="fact">📅 <b>11/10–11/14</b>（二～六）</div>
       <div class="fact">🏨 <b>春熙路 IFS 亞朵</b>（紅星路二段70號）</div>
@@ -165,14 +180,14 @@
       <h2>抵達成都 · 早點休息</h2>
       <span class="date">11/10（二）</span>
     </div>
-    <p class="day-intro">今天只做三件事：落地、到飯店、吃點熱的。長輩第一天別拉行程。</p>
+    <p class="day-intro">今天只做三件事：落地、到飯店、吃點熱的。第一天別拉行程。</p>
 
     <ul class="timeline">
       <li class="stop">
         <div class="time">12:20</div><div class="dot"></div>
         <div class="body">
           <h3>台南高鐵站 · 取票進站</h3>
-          <p>提前 20 分鐘到站，長輩不用趕。上車前在站內買個便當／麵包，車上先吃一輪。</p>
+          <p>提前 20 分鐘到站，不用趕。上車前在站內買個便當／麵包，車上先吃一輪。</p>
           <div class="meta"><span class="tag">12:41 發車</span><span class="tag blue">對號座</span></div>
         </div>
       </li>
@@ -180,7 +195,7 @@
         <div class="time">12:41</div><div class="dot"></div>
         <div class="body">
           <h3>高鐵 台南 → 桃園</h3>
-          <p>12:41 台南發，14:18 抵桃園，車程約 1 小時 37 分。行李放上層架，長輩坐走道側方便起身。</p>
+          <p>12:41 台南發，14:18 抵桃園，車程約 1 小時 37 分。行李放上層架，坐走道側方便起身。</p>
           <div class="meta"><span class="tag">車程 1h37</span><span class="tag blue">台南 → 桃園</span></div>
         </div>
       </li>
@@ -232,7 +247,7 @@
         <div class="time">23:20</div><div class="dot"></div>
         <div class="body">
           <h3>打車 → 春熙路 IFS 亞朵酒店</h3>
-          <p>約 40 分鐘，¥70–90。行李＋長輩，直接打車最省力；這個時間地鐵已收班。</p>
+          <p>約 40 分鐘，¥70–90。行李多，直接打車最省力；這個時間地鐵已收班。</p>
           <div class="meta"><span class="tag">紅星路二段70號</span><span class="tag blue">市二醫院站旁</span></div>
           <div class="btns">
             <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0816,30.6612,%E6%98%A5%E7%86%99%E8%B7%AFIFS%E4%BA%9A%E6%9C%B5%E9%85%92%E5%BA%97&mode=car&policy=1&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航到飯店</a>
@@ -316,7 +331,7 @@
         <div class="body">
           <h3>人民公園｜鶴鳴茶社喝茶、采耳</h3>
           <p>打車 10 分鐘（¥10）或走路 15 分鐘。蓋碗茶 ¥20–40，采耳 ¥50 左右。坐在竹椅上發呆，是成都最值錢的半小時。</p>
-          <div class="meta"><span class="tag green">長輩友好</span><span class="tag blue">可坐一下午</span></div>
+          <div class="meta"><span class="tag green">好坐好聊</span><span class="tag blue">可坐一下午</span></div>
           <div class="btns">
             <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0577,30.6570,%E9%B6%B4%E9%B3%B4%E8%8C%B6%E7%A4%BE&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
             <a class="btn" href="https://uri.amap.com/search?keyword=%E9%B6%B4%E9%B3%B4%E8%8C%B6%E7%A4%BE&city=510100&src=openclaw">🔎 高德搜尋</a>
@@ -337,7 +352,7 @@
         <div class="time">18:30</div><div class="dot"></div>
         <div class="body">
           <h3>晚餐｜馬旺子·川小館（太古里店）</h3>
-          <p>東糠市街1號，人均 ¥90–120。眉山百年川菜，環境對長輩友善。必點：甜皮鴨、豆瓣魚、雞豆花、東坡肘子。17:30 前取號，否則排 40 分鐘起。</p>
+          <p>東糠市街1號，人均 ¥90–120。眉山百年川菜，環境舒服、好坐。必點：甜皮鴨、豆瓣魚、雞豆花、東坡肘子。17:30 前取號，否則排 40 分鐘起。</p>
           <div class="meta"><span class="tag red">避開牛肉菜品</span><span class="tag green">可微辣</span></div>
           <div class="btns">
             <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0808,30.6543,%E9%A6%AC%E6%97%BA%E5%AD%90%E5%B7%9D%E5%B0%8F%E9%A4%A8&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
@@ -383,7 +398,7 @@
         <div class="time">12:15</div><div class="dot"></div>
         <div class="body">
           <h3>打車 → 鐵像寺水街</h3>
-          <p>10 分鐘，¥12。高新區的「小寬窄」，河邊茶館＋川菜＋咖啡，人比市區少，適合長輩。</p>
+          <p>10 分鐘，¥12。高新區的「小寬窄」，河邊茶館＋川菜＋咖啡，人比市區少，適合慢慢坐。</p>
           <div class="btns">
             <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0480,30.5580,%E9%90%B5%E5%83%8F%E5%AF%BA%E6%B0%B4%E8%A1%97&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
           </div>
@@ -393,7 +408,7 @@
         <div class="time">12:30</div><div class="dot"></div>
         <div class="body">
           <h3>午餐｜水街川菜（高德掃街）</h3>
-          <p>打開高德搜「鐵像寺水街 川菜」，按評分排序。推薦點：豆花、粉蒸肉、燒白、時蔬；人均 ¥60–90。想吃西餐可選 <b>米蘭·臻選</b>（天府一街699號，人均 ¥100–150），長輩口味穩。</p>
+          <p>打開高德搜「鐵像寺水街 川菜」，按評分排序。推薦點：豆花、粉蒸肉、燒白、時蔬；人均 ¥60–90。想吃西餐可選 <b>米蘭·臻選</b>（天府一街699號，人均 ¥100–150），口味穩、不踩雷。</p>
           <div class="meta"><span class="tag red">不點水煮牛肉／羊肉</span><span class="tag green">有包廂</span></div>
           <div class="btns">
             <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%90%B5%E5%83%8F%E5%AF%BA%E6%B0%B4%E8%A1%97%E5%B7%9D%E8%8F%9C&city=510100&src=openclaw">🔎 掃街：水街川菜</a>
@@ -437,7 +452,7 @@
         <div class="time">19:00</div><div class="dot"></div>
         <div class="body">
           <h3>晚餐｜蜀九香火鍋（春熙路店）</h3>
-          <p><b>全程唯一一餐麻辣鍋。</b>人均 ¥120–150。點鴛鴦鍋（長輩吃白湯），必點：毛肚、鴨腸、黃喉、蝦滑、酥肉、豆花、萵筍、寬粉。<b>不點肥牛、羊肉卷、牛肉丸。</b>微辣起步，沾料自己調。</p>
+          <p><b>全程唯一一餐麻辣鍋。</b>人均 ¥120–150。點鴛鴦鍋（一邊白湯），必點：毛肚、鴨腸、黃喉、蝦滑、酥肉、豆花、萵筍、寬粉。<b>不點肥牛、羊肉卷、牛肉丸。</b>微辣起步，沾料自己調。</p>
           <div class="meta"><span class="tag red">唯一麻辣鍋</span><span class="tag green">有鴛鴦鍋</span></div>
           <div class="btns">
             <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0800,30.6570,%E8%9C%80%E4%B9%9D%E9%A6%99%E7%81%AB%E9%8D%8B%E6%98%A5%E7%86%99%E8%B7%AF%E5%BA%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
@@ -542,10 +557,10 @@
       </li>
     </ul>
 
-    <div class="box"><b>今日備選：</b>如果長輩走累了，玉林可以換成「飯店休息＋太古里喝咖啡」，錦里只逛 1 小時就回。行程是服務人的，不是反過來。</div>
+    <div class="box"><b>今日備選：</b>如果走累了，玉林可以換成「飯店休息＋太古里喝咖啡」，錦里只逛 1 小時就回。行程是服務人的，不是反過來。</div>
 
     <div class="box"><b>大閘蟹 Plan B（不想在市場吃、或蟹攤不代蒸）：</b>
-      <br>① <b>温岭人家（紅花北路店）</b>（北門荷花池一帶，打車 20 分鐘 ¥25，人均 ¥80–100）— 浙江人開的海鮮老店，清蒸大閘蟹約 ¥20–30／隻，鹹焗花螺、炒海瓜子也穩；環境是大排檔、人多偏吵，長輩怕吵就別去。
+      <br>① <b>温岭人家（紅花北路店）</b>（北門荷花池一帶，打車 20 分鐘 ¥25，人均 ¥80–100）— 浙江人開的海鮮老店，清蒸大閘蟹約 ¥20–30／隻，鹹焗花螺、炒海瓜子也穩；環境是大排檔、人多偏吵，怕吵就別去。
       <br>② <b>明婷飯店</b>（金牛區外曹家巷26號，打車 25 分鐘 ¥25，人均 ¥70）— 蒼蠅館子版，腦花豆腐、奇香排骨、蒜泥白肉、冰鎮冰粉，<b>不要牛肉菜品</b>。
       <br>③ <b>蟹一·肉蟹煲（春熙路店）</b>（錦江區紅星路二段64號，飯店步行 12 分鐘，人均 ¥90–120）— 肉蟹煲＋蟹黃拌飯，湯汁拌麵很邪惡；怕辣可點微辣或不辣。
       <br>④ 想更輕：春熙路商圈幾家<b>蟹黃麵</b>小店（地鐵 2 號線春熙路站 D 口步行 5–8 分鐘），一碗十幾隻蟹拆的蟹黃，人均 ¥98–158，份量小、拍照好看。</div>
@@ -591,7 +606,7 @@
         <div class="time">11:00</div><div class="dot"></div>
         <div class="body">
           <h3>打車 → 雙流機場</h3>
-          <p>約 40 分鐘，¥80–100。行李多＋長輩，直接打車；不建議拖行李轉地鐵。</p>
+          <p>約 40 分鐘，¥80–100。行李多，直接打車；不建議拖行李轉地鐵。</p>
           <div class="meta"><span class="tag red">先確認 T1／T2</span></div>
           <div class="btns">
             <a class="btn amap" href="https://uri.amap.com/navigation?to=103.9520,30.5780,%E6%88%90%E9%83%BD%E5%8F%8C%E6%B5%81%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&mode=car&policy=1&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
@@ -669,43 +684,54 @@
       <h2>打包清單 · 衣服＋特殊攜帶</h2>
       <span class="date">出發前 3 天對一次</span>
     </div>
-    <p class="day-intro">11 月成都：白天約 14–18°C、早晚 9–12°C，陰天為主、濕冷、常起霧，偶有細雨，室內暖氣不強。洋蔥式穿法最實用，長輩重點是「防風＋腳保暖」。</p>
+    <p class="day-intro">11 月成都：白天約 14–18°C、早晚 9–12°C，陰天為主、濕冷、偶有細雨。洋蔥式穿法最實用。點一下就打勾，重新整理也會記得。</p>
 
-    <div class="grid">
-      <div class="pick">
-        <h5>上身（洋蔥式 3 層）</h5>
-        <p>發熱衣／薄長袖 3 件、中層毛衣或刷毛 1–2 件、防風外套 1 件（可擋小雨）。拍照想好看，帶一件亮色中層。</p>
-      </div>
-      <div class="pick">
-        <h5>下身＋鞋</h5>
-        <p>長褲 2 條（一條有彈性）、發熱褲 1 條給長輩早晚穿；好走的防滑運動鞋 1 雙，飯店拖鞋自備一雙。</p>
-      </div>
-      <div class="pick">
-        <h5>配件</h5>
-        <p>圍巾＋帽子（早晚風涼）、薄手套、折疊傘 1 支（成都 11 月常飄細雨）、暖暖包數個、太陽眼鏡。</p>
-      </div>
-      <div class="pick">
-        <h5>換洗與小物</h5>
-        <p>睡衣、襪子 4–5 雙、貼身衣物、小背包（裝水＋外套）、保溫瓶、護手霜（乾冷）、護膝／彈性襪（長輩）。</p>
-      </div>
+    <div class="pack">
+      <h4>衣物與配件</h4>
+      <label class="ck"><input type="checkbox" data-k="c01"><span>發熱衣／薄長袖 3 件</span></label>
+      <label class="ck"><input type="checkbox" data-k="c02"><span>中層毛衣或刷毛 1–2 件</span></label>
+      <label class="ck"><input type="checkbox" data-k="c03"><span>防風外套 1 件</span></label>
+      <label class="ck"><input type="checkbox" data-k="c04"><span>長褲 2 條（一條有彈性）</span></label>
+      <label class="ck"><input type="checkbox" data-k="c05"><span>發熱褲 1 條</span></label>
+      <label class="ck"><input type="checkbox" data-k="c06"><span>防滑好走的鞋</span></label>
+      <label class="ck"><input type="checkbox" data-k="c07"><span>飯店拖鞋</span></label>
+      <label class="ck"><input type="checkbox" data-k="c08"><span>圍巾＋帽子</span></label>
+      <label class="ck"><input type="checkbox" data-k="c09"><span>薄手套</span></label>
+      <label class="ck"><input type="checkbox" data-k="c10"><span>折疊傘</span></label>
+      <label class="ck"><input type="checkbox" data-k="c11"><span>暖暖包</span></label>
+      <label class="ck"><input type="checkbox" data-k="c12"><span>太陽眼鏡</span></label>
+      <label class="ck"><input type="checkbox" data-k="c13"><span>睡衣</span></label>
+      <label class="ck"><input type="checkbox" data-k="c14"><span>襪子 4–5 雙</span></label>
+      <label class="ck"><input type="checkbox" data-k="c15"><span>貼身衣物</span></label>
+      <label class="ck"><input type="checkbox" data-k="c16"><span>小背包</span></label>
+      <label class="ck"><input type="checkbox" data-k="c17"><span>保溫瓶</span></label>
+      <label class="ck"><input type="checkbox" data-k="c18"><span>護手霜</span></label>
+      <label class="ck"><input type="checkbox" data-k="c19"><span>護膝／彈性襪</span></label>
+      <label class="ck"><input type="checkbox" data-k="c20"><span>充電線＋轉接頭</span></label>
+      <div class="cnt"></div>
     </div>
 
-    <div class="box"><b>① 中華航空信用卡「實體卡」</b><br>
-      貴賓室要拿實體卡感應，手機綁卡、截圖都不算。放<b>隨身皮夾</b>，不要進托運行李；附卡若也要進貴賓室，記得一起帶。</div>
+    <div class="pack">
+      <h4>特殊攜帶</h4>
+      <label class="ck"><input type="checkbox" data-k="s01"><span>中華航空信用卡「實體卡」</span></label>
+      <label class="ck"><input type="checkbox" data-k="s02"><span>藥引</span></label>
+      <label class="ck"><input type="checkbox" data-k="s03"><span>淨水</span></label>
+      <div class="cnt"></div>
+    </div>
 
-    <div class="box"><b>② 藥品／藥引</b><br>
-      常備藥：腸胃藥、感冒藥、止痛藥、暈車藥、OK 繃、腸胃敏感的益生菌。<br>
-      長輩慢性病藥：<b>整趟份量＋備用 3 天</b>，保留原包裝與藥袋標示；中藥藥引分裝並寫名字（過關被問才好說明）；針劑／胰島素要帶醫生證明。<br>
-      <b>全部放隨身</b>，托運行李可能延誤或遺失，藥不能賭。</div>
-
-    <div class="box"><b>③ 淨水</b><br>
-      成都自來水<b>不可生飲</b>。帶折疊水壺＋淨水片（或濾水吸管），飯店每日補瓶裝水；長輩全程喝瓶裝或煮沸水，別用自來水漱口後吞下去。腸胃敏感的人，連冰塊都避開。</div>
-
-    <div class="box warn"><b>行李小檢查：</b>行動電源／鋰電池<b>只能隨身</b>；豆瓣醬、火鍋底料等液體<b>放托運</b>並套夾鏈袋；肉製品（牛肉乾、兔肉）<b>不可帶回台灣</b>；台胞證、護照、信用卡、藥品放同一隨身包，不要分散。</div>
+    <div class="pack">
+      <h4>隨身證件與錢包</h4>
+      <label class="ck"><input type="checkbox" data-k="d01"><span>護照（效期 6 個月以上）</span></label>
+      <label class="ck"><input type="checkbox" data-k="d02"><span>台胞證</span></label>
+      <label class="ck"><input type="checkbox" data-k="d03"><span>機票／訂房確認</span></label>
+      <label class="ck"><input type="checkbox" data-k="d04"><span>行動電源（只能隨身）</span></label>
+      <label class="ck"><input type="checkbox" data-k="d05"><span>人民幣現金＋可刷卡（支付寶／微信先綁好）</span></label>
+      <div class="cnt"></div>
+    </div>
   </section>
 
   <footer>
-    <p><b>關於這份行程</b>：餐飲以高德「掃街」榜單＋成都本地人常去清單為底，按「評分、距離、排隊時間、長輩友好」四個維度挑選；已排除牛肉、羊肉、兔肉主打店，並在每餐標註需要避開的具體菜品。</p>
+    <p><b>關於這份行程</b>：餐飲以高德「掃街」榜單＋成都本地人常去清單為底，按「評分、距離、排隊時間、好不好坐」四個維度挑選；已排除牛肉、羊肉、兔肉主打店，並在每餐標註需要避開的具體菜品。</p>
     <p><b>價格</b>：為每人預估，實際以店家為準；11 月為成都平季，熱門店仍建議 17:30 前取號。</p>
     <p><b>大閘蟹</b>：11/13 晚在青石橋海鮮市場現挑現蒸，母蟹 3.5–4 兩約 ¥35–45／隻，兩人 2 隻＋兩道菜約 ¥150–200（2026 年蟹價比往年低約 1/3）。全行程<b>不含自助餐</b>，一律單點、按食量收手。蟹季供應看當天到貨，出發前一日用高德查營業與評分即可。</p>
     <p><b>台灣段交通</b>：去程 11/10 高鐵台南 12:41 → 桃園 14:18，轉機捷約 30 分鐘到 TPE，約 15:00 抵達、緩衝近 4 小時；回程 11/14 17:45 抵 TPE，出關＋機捷約 70 分鐘，19:10 到桃園高鐵站，20:20 高鐵 → 台南 21:45。</p>
@@ -714,5 +740,26 @@
   </footer>
 
 </div>
+<script>
+(function(){
+  var KEY='cd_pack_v1', state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  var boxes=[].slice.call(document.querySelectorAll('.ck input'));
+  function update(){
+    boxes.forEach(function(b){b.checked=!!state[b.dataset.k]});
+    [].slice.call(document.querySelectorAll('.pack')).forEach(function(p){
+      var ins=[].slice.call(p.querySelectorAll('input'));
+      var n=ins.filter(function(i){return i.checked}).length;
+      var c=p.querySelector('.cnt'); if(c)c.textContent='已勾 '+n+' / '+ins.length;
+    });
+  }
+  boxes.forEach(function(b){b.addEventListener('change',function(){
+    state[b.dataset.k]=b.checked;
+    try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}
+    update();
+  });});
+  update();
+})();
+</script>
 </body>
 </html>
