@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成都 5天4晚行程｜11/10–11/14</title>
+<style>
+  :root{
+    --ink:#2a2320; --muted:#7b6f68; --line:#e8ddd2; --paper:#fbf7f1;
+    --card:#fffdfa; --red:#b23a2f; --red-soft:#f7e7e2; --gold:#c8952f;
+    --green:#2f6b4f; --green-soft:#e8f2ec; --blue:#2f5d8a; --blue-soft:#e8eff7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:920px;margin:0 auto;padding:0 16px 64px}
+
+  header.hero{background:radial-gradient(1200px 400px at 10% -20%,#d9563f 0%,transparent 60%),
+    linear-gradient(135deg,#8f2b22 0%,#b23a2f 55%,#c95a3d 100%);
+    color:#fff;padding:38px 16px 30px;margin-bottom:22px}
+  .hero-inner{max-width:920px;margin:0 auto}
+  .kicker{font-size:13px;letter-spacing:.22em;opacity:.85;margin-bottom:8px}
+  h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 10px;font-weight:800;letter-spacing:-.01em}
+  .sub{font-size:15px;opacity:.92;max-width:660px}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .fact{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);
+    border-radius:999px;padding:7px 13px;font-size:13px}
+  .fact b{font-weight:700}
+
+  .notice{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);
+    border-radius:14px;padding:16px 18px;margin:0 0 22px;font-size:14px;color:#4a403a}
+  .notice b{color:var(--ink)}
+  .notice code{background:#f3ece4;padding:1px 5px;border-radius:4px;font-size:12.5px}
+
+  nav.days{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px;position:sticky;top:0;z-index:5;
+    background:linear-gradient(var(--paper) 80%,rgba(251,247,241,0));padding:10px 0 12px}
+  nav.days a{font-size:13px;font-weight:700;padding:8px 13px;border-radius:999px;
+    border:1px solid var(--line);background:var(--card);color:var(--muted)}
+  nav.days a:hover{border-color:var(--red);color:var(--red)}
+
+  section.day{margin:0 0 36px;scroll-margin-top:64px}
+  .day-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+    border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:10px}
+  .day-no{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--red);
+    background:var(--red-soft);padding:4px 9px;border-radius:6px}
+  .day-head h2{font-size:22px;margin:0;font-weight:800}
+  .day-head .date{color:var(--muted);font-size:13px;margin-left:auto}
+  .day-intro{font-size:14px;color:var(--muted);margin:0 0 18px}
+
+  .timeline{position:relative;margin:0;padding:0;list-style:none}
+  .timeline::before{content:"";position:absolute;left:78px;top:10px;bottom:10px;width:2px;
+    background:linear-gradient(var(--line),#f0e6da)}
+  li.stop{position:relative;display:flex;gap:16px;padding:0 0 16px}
+  .time{width:64px;flex:0 0 64px;text-align:right;font-variant-numeric:tabular-nums;
+    font-weight:800;font-size:13.5px;padding-top:13px}
+  .dot{position:absolute;left:72px;top:18px;width:14px;height:14px;border-radius:50%;
+    background:var(--card);border:3px solid var(--red);z-index:1}
+  .body{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:13px 15px;margin-left:20px;box-shadow:0 1px 0 rgba(42,35,32,.03)}
+  .body h3{margin:0 0 4px;font-size:15.5px;font-weight:800}
+  .body p{margin:0;font-size:13.8px;color:#5a504a}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+  .tag{font-size:11.5px;padding:3px 8px;border-radius:999px;background:#f4ede5;color:#6d5f55;font-weight:700}
+  .tag.red{background:var(--red-soft);color:var(--red)}
+  .tag.green{background:var(--green-soft);color:var(--green)}
+  .tag.blue{background:var(--blue-soft);color:var(--blue)}
+
+  .btns{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+  .btn{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:800;
+    padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);
+    transition:.15s}
+  .btn:hover{border-color:var(--red);color:var(--red)}
+  .btn.amap{background:#e8f1ff;border-color:#cfe0f7;color:#245f9e}
+  .btn.amap:hover{background:#dceaff}
+  .btn.food{background:#fff2ea;border-color:#f3d8c8;color:#a64b27}
+  .btn.food:hover{background:#ffe9dc}
+  .btn.walk{background:#eef7f1;border-color:#d7ebde;color:#2f6b4f}
+
+  .meal{border:1px dashed #e2c9b6;background:#fffaf5;border-radius:14px;padding:13px 15px;margin:10px 0 0 20px}
+  .meal .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+  .meal h4{margin:0;font-size:15px;font-weight:800}
+  .meal .price{font-size:12.5px;color:var(--red);font-weight:800;white-space:nowrap}
+  .meal p{margin:5px 0 0;font-size:13.5px;color:#5a504a}
+  .meal .why{margin-top:6px;font-size:12.8px;color:var(--muted)}
+  .meal .avoid{margin-top:7px;font-size:12.8px;color:#a03a2e;background:#fbeae5;
+    border-radius:8px;padding:6px 9px}
+  .meal .links{margin-top:9px;display:flex;gap:7px;flex-wrap:wrap}
+
+  .box{background:var(--green-soft);border:1px solid #d4e6da;border-radius:12px;
+    padding:12px 14px;margin:16px 0 0 20px;font-size:13.3px;color:#315d47}
+  .box b{color:#234b38}
+  .box.warn{background:#fdf3e2;border-color:#f0dfbf;color:#7a5a1f}
+  .box.warn b{color:#5f4515}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:10px 0 0 20px}
+  .pick{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+  .pick h5{margin:0 0 4px;font-size:14px}
+  .pick p{margin:0;font-size:12.8px;color:var(--muted)}
+  .pick .links{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--muted)}
+  footer p{margin:4px 0}
+
+  @media (max-width:560px){
+    .timeline::before{left:58px}
+    .time{width:44px;flex:0 0 44px;font-size:12.5px}
+    .dot{left:52px}
+    .body,.meal,.box,.grid{margin-left:16px}
+    .day-head .date{margin-left:0;width:100%}
+  }
+  @media print{
+    nav.days{display:none}
+    body{background:#fff}
+    .body,.meal,.pick{break-inside:avoid}
+    .btns,.links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">CHENGDU · 5 DAYS</div>
+    <h1>成都 5 天 4 晚<br>吃貨慢活行程</h1>
+    <div class="sub">2 人同行（含長輩）｜每天 2–3 個點、午後留白、打車為主。每站附高德導航，每家店附高德搜尋。</div>
+    <div class="facts">
+      <div class="fact">📅 <b>11/10–11/14</b>（二～六）</div>
+      <div class="fact">🏨 <b>春熙路 IFS 亞朵</b>（紅星路二段70號）</div>
+      <div class="fact">✈️ 去 <b>CA418</b> 18:55→22:45｜回 <b>CA417</b> 14:35→17:45</div>
+      <div class="fact">🚫 不吃<b>牛、羊、兔</b></div>
+      <div class="fact">🍲 麻辣鍋只排 <b>1 餐</b></div>
+      <div class="fact">🦀 大閘蟹 <b>11/13 晚</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="notice">
+    <b>高德使用說明</b><br>
+    ① 點「高德導航」＝以你目前位置直接導到目的地，手機開啟高德 App 即可。<br>
+    ② 點「高德搜尋」＝打開該店的高德頁面，可看評分、營業時間、排隊與電話。<br>
+    ③ 「掃街」用法：高德 App 首頁 → <code>掃街</code> → 選商圈（春熙路／寬窄巷子／玉林／大源）→ 按「評分＋距離」排序。本頁的店都是從掃街榜單與本地人清單裡挑的，避開觀光客雷店。<br>
+    ④ 所有導航連結已帶成都座標，若定位有偏差，用店名再搜一次即可。
+  </div>
+
+  <nav class="days">
+    <a href="#d1">Day 1 · 11/10 抵達</a>
+    <a href="#d2">Day 2 · 11/11 寬窄巷子</a>
+    <a href="#d3">Day 3 · 11/12 二奢＋足浴＋麻辣鍋</a>
+    <a href="#d4">Day 4 · 11/13 錦里＋玉林＋大閘蟹</a>
+    <a href="#d5">Day 5 · 11/14 特產＋回程</a>
+  </nav>
+
+  <!-- ================= DAY 1 ================= -->
+  <section class="day" id="d1">
+    <div class="day-head">
+      <span class="day-no">DAY 1</span>
+      <h2>抵達成都 · 早點休息</h2>
+      <span class="date">11/10（二）</span>
+    </div>
+    <p class="day-intro">今天只做三件事：落地、到飯店、吃點熱的。長輩第一天別拉行程。</p>
+
+    <ul class="timeline">
+      <li class="stop">
+        <div class="time">18:55</div><div class="dot"></div>
+        <div class="body">
+          <h3>台北桃園 TPE 起飛</h3>
+          <p>CA418，飛行約 3 小時 50 分。機上先吃一點，落地後不折騰。</p>
+          <div class="meta"><span class="tag">國際線</span><span class="tag blue">證件／台胞證放隨身</span></div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">22:45</div><div class="dot"></div>
+        <div class="body">
+          <h3>抵達成都雙流機場</h3>
+          <p>領行李、出關約 30–40 分鐘。<b>先確認航站樓</b>（國際／港澳台多在 T1，回程起飛前再查一次）。</p>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=103.9520,30.5780,%E6%88%90%E9%83%BD%E5%8F%8C%E6%B5%81%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BAT2&mode=car&policy=1&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航到機場</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">23:20</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 春熙路 IFS 亞朵酒店</h3>
+          <p>約 40 分鐘，¥70–90。行李＋長輩，直接打車最省力；這個時間地鐵已收班。</p>
+          <div class="meta"><span class="tag">紅星路二段70號</span><span class="tag blue">市二醫院站旁</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0816,30.6612,%E6%98%A5%E7%86%99%E8%B7%AFIFS%E4%BA%9A%E6%9C%B5%E9%85%92%E5%BA%97&mode=car&policy=1&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航到飯店</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=%E6%98%A5%E7%86%99%E8%B7%AFIFS%E4%BA%9A%E6%9C%B5%E9%85%92%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">23:50</div><div class="dot"></div>
+        <div class="body">
+          <h3>Check-in · 放行李 · 洗漱</h3>
+          <p>亞朵就在紅星路二段，樓下便利店齊全。今晚不排景點，直接休息。</p>
+          <div class="meta"><span class="tag green">明天 09:00 再出門</span></div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="meal">
+      <div class="top"><h4>宵夜｜這個時間的務實選擇</h4><span class="price">¥0–40／人</span></div>
+      <p>落地已近 23:00，春熙路正餐館多半打烊。三個方案：</p>
+      <p>① 機場 T2 便利店先買水與麵包；② 到飯店用<b>美團外賣</b>搜「抄手／粥／燒烤」，備註<b>不要牛羊肉</b>；③ 樓下 24h 便利店關東煮＋酸奶。</p>
+      <div class="why">別硬找火鍋——麻辣鍋已排在 Day 3 晚上，第一晚吃太辣影響睡眠。</div>
+      <div class="links">
+        <a class="btn food" href="https://uri.amap.com/search?keyword=24%E5%B0%8F%E6%97%B6%E6%8A%84%E6%89%8B&city=510100&src=openclaw">🔎 搜 24h 抄手</a>
+        <a class="btn" href="https://uri.amap.com/search?keyword=%E4%BE%BF%E5%88%A9%E5%BA%97&city=510100&src=openclaw">🔎 搜便利店</a>
+      </div>
+    </div>
+
+    <div class="box warn"><b>第一晚提醒：</b>雙流機場到市區高速夜間不堵，但計程車排隊可能 10–15 分鐘；上車前確認「打表」或直接用高德叫車。</div>
+  </section>
+
+  <!-- ================= DAY 2 ================= -->
+  <section class="day" id="d2">
+    <div class="day-head">
+      <span class="day-no">DAY 2</span>
+      <h2>寬窄巷子 · 人民公園 · 太古里</h2>
+      <span class="date">11/11（三）</span>
+    </div>
+    <p class="day-intro">老成都的慢＋新成都的潮，一天剛剛好。走路不多，中途有茶館坐著歇。</p>
+
+    <ul class="timeline">
+      <li class="stop">
+        <div class="time">09:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>早餐｜甘食記·成都肥腸粉（春熙路店）</h3>
+          <p>步行約 8 分鐘。肥腸粉＋軍屯鍋盔是標準組合，白味不辣也有。人均 ¥22。</p>
+          <div class="meta"><span class="tag green">08:30 開門</span><span class="tag">不要牛肉鍋盔</span></div>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0798,30.6568,%E7%94%98%E9%A3%9F%E8%A8%98%E8%82%A5%E8%85%B8%E7%B2%89%E6%98%A5%E7%86%99%E8%B7%AF%E5%BA%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E7%94%98%E9%A3%9F%E8%A8%98%E6%88%90%E9%83%BD%E8%82%A5%E8%85%B8%E7%B2%89%E6%98%A5%E7%86%99%E8%B7%AF%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">10:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>寬窄巷子｜逛街拍照</h3>
+          <p>寬巷子看院落、窄巷子看小店、井巷子看市井。早上人少，拍照最舒服；逛 2 小時足夠。</p>
+          <div class="meta"><span class="tag">免費</span><span class="tag blue">地鐵 4 號線寬窄巷子站</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0556,30.6694,%E5%AF%AC%E7%AA%84%E5%B7%B7%E5%AD%90&mode=bus&src=openclaw&coordinate=gaode&callnative=0">🚇 高德導航</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=%E5%AF%AC%E7%AA%84%E5%B7%B7%E5%AD%90&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">12:15</div><div class="dot"></div>
+        <div class="body">
+          <h3>午餐｜奎星樓街（本地人食堂）</h3>
+          <p>從寬窄巷子走 8 分鐘。首選 <b>二孃雞爪爪</b>：滷雞爪軟糯、檸檬雞爪清爽、雞絲涼麵解辣，人均 ¥50。排隊先取號。</p>
+          <p>備選 <b>冒椒火辣</b>（奎星樓街33號）：冷鍋串串自選，只拿雞肉、豬肉、蔬菜，<b>不要兔腰、不要牛肉</b>；人均 ¥60–80。</p>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0578,30.6716,%E5%A5%8E%E6%98%9F%E6%A8%93%E8%A1%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E4%BA%8C%E5%AD%83%E9%9B%9E%E7%88%AA%E7%88%AA%E5%A5%8E%E6%98%9F%E6%A8%93%E5%BA%97&city=510100&src=openclaw">🔎 二孃雞爪爪</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E5%86%92%E6%A4%92%E7%81%AB%E8%BE%A3%E5%A5%8E%E6%98%9F%E6%A8%93%E8%A1%97%E5%BA%97&city=510100&src=openclaw">🔎 冒椒火辣</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">14:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>人民公園｜鶴鳴茶社喝茶、采耳</h3>
+          <p>打車 10 分鐘（¥10）或走路 15 分鐘。蓋碗茶 ¥20–40，采耳 ¥50 左右。坐在竹椅上發呆，是成都最值錢的半小時。</p>
+          <div class="meta"><span class="tag green">長輩友好</span><span class="tag blue">可坐一下午</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0577,30.6570,%E9%B6%B4%E9%B3%B4%E8%8C%B6%E7%A4%BE&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=%E9%B6%B4%E9%B3%B4%E8%8C%B6%E7%A4%BE&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">16:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>太古里＋IFS｜逛街、方所書店</h3>
+          <p>打車 10 分鐘（¥10）。太古里拍照、方所書店吹冷氣；IFS 七樓空中花園看熊貓屁股（免費，不進熊貓基地）。</p>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0827,30.6538,%E6%88%90%E9%83%BD%E8%BF%9C%E6%B4%8B%E5%A4%AA%E5%8F%A4%E9%87%8C&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">18:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>晚餐｜馬旺子·川小館（太古里店）</h3>
+          <p>東糠市街1號，人均 ¥90–120。眉山百年川菜，環境對長輩友善。必點：甜皮鴨、豆瓣魚、雞豆花、東坡肘子。17:30 前取號，否則排 40 分鐘起。</p>
+          <div class="meta"><span class="tag red">避開牛肉菜品</span><span class="tag green">可微辣</span></div>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0808,30.6543,%E9%A6%AC%E6%97%BA%E5%AD%90%E5%B7%9D%E5%B0%8F%E9%A4%A8&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%A6%AC%E6%97%BA%E5%AD%90%E5%B7%9D%E5%B0%8F%E9%A4%A8%E5%A4%AA%E5%8F%A4%E9%87%8C%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">20:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>太古里夜景 → 步行回飯店</h3>
+          <p>散步 15 分鐘回紅星路，順路買杯酸奶。結束。</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="box"><b>今日節奏：</b>走路集中在寬窄巷子與太古里，兩段都平坦；累了就打車，別省這 ¥10。</div>
+  </section>
+
+  <!-- ================= DAY 3 ================= -->
+  <section class="day" id="d3">
+    <div class="day-head">
+      <span class="day-no">DAY 3</span>
+      <h2>二奢尋寶 · 大源慢活 · 足浴 · 麻辣鍋</h2>
+      <span class="date">11/12（四）</span>
+    </div>
+    <p class="day-intro">今天往南走，節奏放慢：逛包、喝茶、按腳，晚上回春熙路吃唯一一餐麻辣鍋。</p>
+
+    <ul class="timeline">
+      <li class="stop">
+        <div class="time">09:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 菁姐二手精品</h3>
+          <p>武侯區吉泰路300號（高新區大源），約 25 分鐘，¥30–35。建議出發前先微信或電話確認營業，二奢店有時 11:00 才開。</p>
+          <div class="meta"><span class="tag red">指定行程</span><span class="tag">預留 2 小時</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0608,30.5482,%E8%8F%81%E5%A7%90%E4%BA%8C%E6%89%8B%E7%B2%BE%E5%93%81&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=%E8%8F%81%E5%A7%90%E4%BA%8C%E6%89%8B%E7%B2%BE%E5%93%81&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">12:15</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 鐵像寺水街</h3>
+          <p>10 分鐘，¥12。高新區的「小寬窄」，河邊茶館＋川菜＋咖啡，人比市區少，適合長輩。</p>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0480,30.5580,%E9%90%B5%E5%83%8F%E5%AF%BA%E6%B0%B4%E8%A1%97&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">12:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>午餐｜水街川菜（高德掃街）</h3>
+          <p>打開高德搜「鐵像寺水街 川菜」，按評分排序。推薦點：豆花、粉蒸肉、燒白、時蔬；人均 ¥60–90。想吃西餐可選 <b>米蘭·臻選</b>（天府一街699號，人均 ¥100–150），長輩口味穩。</p>
+          <div class="meta"><span class="tag red">不點水煮牛肉／羊肉</span><span class="tag green">有包廂</span></div>
+          <div class="btns">
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%90%B5%E5%83%8F%E5%AF%BA%E6%B0%B4%E8%A1%97%E5%B7%9D%E8%8F%9C&city=510100&src=openclaw">🔎 掃街：水街川菜</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">14:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>陳錦茶鋪｜河邊蓋碗茶</h3>
+          <p>鐵像寺水街的壩壩茶館，竹椅擺在河邊，比鶴鳴茶社清靜。蓋碗茶 ¥30–50，可以坐很久。</p>
+          <div class="meta"><span class="tag green">今日咖啡／茶擔當</span></div>
+          <div class="btns">
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%99%B3%E9%8C%A6%E8%8C%B6%E9%8B%AA%E9%90%B5%E5%83%8F%E5%AF%BA%E6%B0%B4%E8%A1%97%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">15:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>足浴＋肩頸按摩（全程唯一一天）</h3>
+          <p>大源／天府三街一帶選擇多。高德搜「足浴按摩」，挑評分 4.5 以上、有連鎖品牌的店；90 分鐘約 ¥150–250／人。提前電話預約兩人同時，避免等位。</p>
+          <div class="meta"><span class="tag red">指定行程</span><span class="tag blue">約 90 分鐘</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0620,30.5460,%E5%A4%A7%E6%BA%90%E8%B6%B3%E6%B5%B4%E6%8C%89%E6%91%A9&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E8%B6%B3%E6%B5%B4%E6%8C%89%E6%91%A9&city=510100&src=openclaw">🔎 掃街：足浴</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">18:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車回春熙路</h3>
+          <p>約 25 分鐘，¥35–40。回飯店放東西、洗把臉再出門吃鍋。</p>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0816,30.6612,%E6%98%A5%E7%86%99%E8%B7%AFIFS%E4%BA%9A%E6%9C%B5%E9%85%92%E5%BA%97&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">19:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>晚餐｜蜀九香火鍋（春熙路店）</h3>
+          <p><b>全程唯一一餐麻辣鍋。</b>人均 ¥120–150。點鴛鴦鍋（長輩吃白湯），必點：毛肚、鴨腸、黃喉、蝦滑、酥肉、豆花、萵筍、寬粉。<b>不點肥牛、羊肉卷、牛肉丸。</b>微辣起步，沾料自己調。</p>
+          <div class="meta"><span class="tag red">唯一麻辣鍋</span><span class="tag green">有鴛鴦鍋</span></div>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0800,30.6570,%E8%9C%80%E4%B9%9D%E9%A6%99%E7%81%AB%E9%8D%8B%E6%98%A5%E7%86%99%E8%B7%AF%E5%BA%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E8%9C%80%E4%B9%9D%E9%A6%99%E7%81%AB%E9%8D%8B%E6%98%A5%E7%86%99%E8%B7%AF%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">21:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>春熙路散步回飯店</h3>
+          <p>飯後走 15 分鐘消食，早點休息。</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="box warn"><b>火鍋避雷：</b>成都火鍋菜單「牛肉」出現率極高（嫩牛肉、肥牛、牛肉丸、香菜牛肉）。點菜時直接跟服務員說「我們不吃牛羊肉」，請他推薦豬肉、雞肉、鴨腸、黃喉、毛肚、蝦滑、蔬菜類。</div>
+  </section>
+
+  <!-- ================= DAY 4 ================= -->
+  <section class="day" id="d4">
+    <div class="day-head">
+      <span class="day-no">DAY 4</span>
+      <h2>錦里古街 · 武侯祠大街 · 玉林 · 大閘蟹</h2>
+      <span class="date">11/13（五）</span>
+    </div>
+    <p class="day-intro">早上逛錦里避人潮，下午去玉林喝咖啡，晚上吃蟹季限定的大閘蟹（11 月正是最肥的時候）。</p>
+
+    <ul class="timeline">
+      <li class="stop">
+        <div class="time">09:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 錦里古街</h3>
+          <p>約 20 分鐘，¥25。10:00 前到，旅行團還沒進場，拍照最乾淨。</p>
+          <div class="meta"><span class="tag red">只逛街，不進武侯祠</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0491,30.6427,%E9%8C%A6%E9%87%8C%E5%8F%A4%E8%A1%97&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=%E9%8C%A6%E9%87%8C%E5%8F%A4%E8%A1%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">10:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>錦里｜逛街拍照（2 小時）</h3>
+          <p>三國主題商業街，紅燈籠＋青石板很好拍。小吃偏景區價，建議「少量多樣」，留肚子給晚上。</p>
+          <div class="meta"><span class="tag">免費</span><span class="tag green">平路好走</span></div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">12:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>午餐｜錦里小吃（挑著吃）</h3>
+          <p>推薦：傷心涼粉、糖油果子、葉兒粑、三大炮、缽缽雞（雞肉）。人均 ¥40–60。</p>
+          <div class="meta"><span class="tag red">避開：張飛牛肉、牛肉焦餅、兔頭、烤兔</span></div>
+          <div class="btns">
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%8C%A6%E9%87%8C%E5%B0%8F%E5%90%83&city=510100&src=openclaw">🔎 掃街：錦里小吃</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">13:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>武侯祠大街｜逛街散步</h3>
+          <p>從錦里走出來就是，沿街看蜀錦、茶葉、小玩意。不進武侯祠，避免古蹟行程。</p>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0475,30.6445,%E6%AD%A6%E4%BE%AF%E7%A5%A0%E5%A4%A7%E8%A1%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">15:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 玉林｜咖啡＋老街</h3>
+          <p>約 15 分鐘，¥20。推薦 <b>明堂士多</b>（芳草東街，咖啡＋黑膠＋小酒），或玉林四巷隨便找一家手沖。人均 ¥30–45。</p>
+          <div class="meta"><span class="tag green">慢活拍照</span><span class="tag blue">文青街區</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0610,30.6335,%E7%8E%89%E6%9E%97%E8%8A%B3%E8%8D%89%E6%9D%B1%E8%A1%97&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E6%98%8E%E5%A0%82%E5%A3%AB%E5%A4%9A&city=510100&src=openclaw">🔎 明堂士多</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">17:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>晚餐｜大閘蟹 · 青石橋海鮮市場（現挑現蒸）</h3>
+          <p>從玉林打車 20 分鐘 ¥22（也可先回飯店放東西，再走 15 分鐘過去）。一樓蟹攤挑<b>母蟹 3.5–4 兩</b>，今年行情約 ¥35–45／隻（比往年便宜約 1/3），<b>兩人點 2 隻就夠</b>；二樓海鮮加工店代蒸（加工費約 ¥10–20／隻），順便點一盤炒時蔬＋一碗海鮮粥或炒飯，兩人約 ¥150–200 收工，吃得剛好、不浪費。</p>
+          <p><b>挑蟹三招：</b>掂重量（同大小重的好）→ 看肚臍（母蟹圓臍、膏黃飽滿）→ 捏蟹腿（硬＝結實）。請店家綁好再蒸，蒸 15 分鐘；配薑茶，別配冰飲。</p>
+          <div class="meta"><span class="tag red">蟹季限定 11 月最肥</span><span class="tag green">非自助·按隻點</span><span class="tag blue">兩人約 ¥150–200</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=104.0768,30.6505,%E9%9D%92%E7%9F%B3%E6%A9%8B%E6%B5%B7%E9%AE%AE%E5%B8%82%E5%A0%B4&mode=car&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+            <a class="btn food" href="https://uri.amap.com/search?keyword=%E9%9D%92%E7%9F%B3%E6%A9%8B%E6%B5%B7%E9%AE%AE%E5%B8%82%E5%A0%B4&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">20:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車回飯店 · 收拾行李</h3>
+          <p>約 20 分鐘，¥25。明天中午的飛機，今晚把特產清單列好。</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="box"><b>今日備選：</b>如果長輩走累了，玉林可以換成「飯店休息＋太古里喝咖啡」，錦里只逛 1 小時就回。行程是服務人的，不是反過來。</div>
+
+    <div class="box"><b>大閘蟹 Plan B（不想在市場吃、或蟹攤不代蒸）：</b>
+      <br>① <b>温岭人家（紅花北路店）</b>（北門荷花池一帶，打車 20 分鐘 ¥25，人均 ¥80–100）— 浙江人開的海鮮老店，清蒸大閘蟹約 ¥20–30／隻，鹹焗花螺、炒海瓜子也穩；環境是大排檔、人多偏吵，長輩怕吵就別去。
+      <br>② <b>明婷飯店</b>（金牛區外曹家巷26號，打車 25 分鐘 ¥25，人均 ¥70）— 蒼蠅館子版，腦花豆腐、奇香排骨、蒜泥白肉、冰鎮冰粉，<b>不要牛肉菜品</b>。
+      <br>③ <b>蟹一·肉蟹煲（春熙路店）</b>（錦江區紅星路二段64號，飯店步行 12 分鐘，人均 ¥90–120）— 肉蟹煲＋蟹黃拌飯，湯汁拌麵很邪惡；怕辣可點微辣或不辣。
+      <br>④ 想更輕：春熙路商圈幾家<b>蟹黃麵</b>小店（地鐵 2 號線春熙路站 D 口步行 5–8 分鐘），一碗十幾隻蟹拆的蟹黃，人均 ¥98–158，份量小、拍照好看。</div>
+  </section>
+
+  <!-- ================= DAY 5 ================= -->
+  <section class="day" id="d5">
+    <div class="day-head">
+      <span class="day-no">DAY 5</span>
+      <h2>買特產 · 退房 · 回程</h2>
+      <span class="date">11/14（六）</span>
+    </div>
+    <p class="day-intro">不排景點。上午買伴手禮，11:00 出發機場，留足 3 小時。</p>
+
+    <ul class="timeline">
+      <li class="stop">
+        <div class="time">08:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>早餐 · 收行李</h3>
+          <p>飯店早餐或樓下買豆漿油條。把要拖運的液體（豆瓣醬、火鍋底料）放托運行李。</p>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">09:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>Ole' 精品超市（太古里 B1）｜買特產</h3>
+          <p>步行 10 分鐘。比景區特產店實在，選擇也多。</p>
+          <div class="meta"><span class="tag green">可刷卡／掃碼</span><span class="tag blue">紅星路三段</span></div>
+          <div class="btns">
+            <a class="btn walk" href="https://uri.amap.com/navigation?to=104.0825,30.6535,Ole%E7%B2%BE%E5%93%81%E8%B6%85%E5%B8%82%E5%A4%AA%E5%8F%A4%E9%87%8C%E5%BA%97&mode=walk&src=openclaw&coordinate=gaode&callnative=0">🚶 步行導航</a>
+            <a class="btn" href="https://uri.amap.com/search?keyword=Ole%E7%B2%BE%E5%93%81%E8%B6%85%E5%B8%82%E5%A4%AA%E5%8F%A4%E9%87%8C%E5%BA%97&city=510100&src=openclaw">🔎 高德搜尋</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">10:30</div><div class="dot"></div>
+        <div class="body">
+          <h3>回飯店退房</h3>
+          <p>步行 10 分鐘。行李可先寄放櫃檯，上車前再拿。</p>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">11:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>打車 → 雙流機場</h3>
+          <p>約 40 分鐘，¥80–100。行李多＋長輩，直接打車；不建議拖行李轉地鐵。</p>
+          <div class="meta"><span class="tag red">先確認 T1／T2</span></div>
+          <div class="btns">
+            <a class="btn amap" href="https://uri.amap.com/navigation?to=103.9520,30.5780,%E6%88%90%E9%83%BD%E5%8F%8C%E6%B5%81%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&mode=car&policy=1&src=openclaw&coordinate=gaode&callnative=0">🧭 高德導航</a>
+          </div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">12:00</div><div class="dot"></div>
+        <div class="body">
+          <h3>機場午餐 · 通關</h3>
+          <p>避開牛肉麵；選粥、餛飩、雞肉飯、沙拉。免稅店可逛，但別買牛肉乾／兔肉製品回台。</p>
+          <div class="meta"><span class="tag red">肉製品多數不可帶回台灣</span></div>
+        </div>
+      </li>
+      <li class="stop">
+        <div class="time">14:35</div><div class="dot"></div>
+        <div class="body">
+          <h3>CA417 起飛 → 17:45 抵達 TPE</h3>
+          <p>回家。記得把發票拍照存進共用記帳。</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="box"><b>特產清單（避開牛／羊／兔）：</b><br>
+      ✅ 郫縣豆瓣醬（小瓶裝托運）｜✅ 漢源花椒／辣椒面｜✅ 蜀九香或大龍燚火鍋底料（常溫）｜✅ 竹葉青／蒙頂山茶｜✅ 熊貓周邊、蜀錦小物｜❌ 張飛牛肉？<b>不要</b>｜❌ 燈影牛肉、兔肉乾、老媽兔頭。</div>
+
+    <div class="box warn"><b>回程檢查：</b>台胞證、護照、手機充電、行動電源（不可托運）、火鍋底料是否漏油、飯店房卡已退。國際／港澳台航班建議 3 小時前到。</div>
+  </section>
+
+  <footer>
+    <p><b>關於這份行程</b>：餐飲以高德「掃街」榜單＋成都本地人常去清單為底，按「評分、距離、排隊時間、長輩友好」四個維度挑選；已排除牛肉、羊肉、兔肉主打店，並在每餐標註需要避開的具體菜品。</p>
+    <p><b>價格</b>：為每人預估，實際以店家為準；11 月為成都平季，熱門店仍建議 17:30 前取號。</p>
+    <p><b>大閘蟹</b>：11/13 晚在青石橋海鮮市場現挑現蒸，母蟹 3.5–4 兩約 ¥35–45／隻，兩人 2 隻＋兩道菜約 ¥150–200（2026 年蟹價比往年低約 1/3）。全行程<b>不含自助餐</b>，一律單點、按食量收手。蟹季供應看當天到貨，出發前一日用高德查營業與評分即可。</p>
+    <p><b>交通</b>：導航連結使用高德座標，從你目前位置出發；打車可用高德叫車，地鐵掃碼用支付寶／微信乘車碼。</p>
+    <p>製作：叮噹 🔔 ｜ 2026.10 ｜ 給柔姐的成都 5 天 4 晚</p>
+  </footer>
+
+</div>
+</body>
+</html>
